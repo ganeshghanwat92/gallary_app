@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/searchImageFragment">
+
+    <fragment
+        android:id="@+id/searchImageFragment"
+        android:name="com.mygallary.ui.SearchImageFragment"
+        android:label="fragment_search_image"
+        tools:layout="@layout/fragment_search_image" >
+        <action
+            android:id="@+id/action_searchImageFragment_to_imagePreviewFragment"
+            app:destination="@id/imagePreviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/imagePreviewFragment"
+        android:name="com.mygallary.ui.ImagePreviewFragment"
+        android:label="fragment_image_preview"
+        tools:layout="@layout/fragment_image_preview" />
+</navigation>
